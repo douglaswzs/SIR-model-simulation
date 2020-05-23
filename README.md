@@ -8,6 +8,7 @@ The outbreak of the novel coronavirus disease (Covid-19) brought considerable tu
 <img src="/SIRsimulation.gif"/>
 
 <img src="/SIRsnapshot.jpg"/>
+
 ## What is SIR model
 SIR model is a kind of compartmental model describing the dynamics of infectious disease. You may wonder why it is called the “compartmental model.” The model divides the population into compartments. Each compartment is expected to have the same characteristics. SIR represents the three compartments segmented by the model.
 
