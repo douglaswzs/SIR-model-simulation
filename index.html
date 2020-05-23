@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SIR Model Simulation</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="node_modules/p5/lib/p5.min.js"></script>
+    <script type="text/javascript" src="node_modules/chart.js/dist/Chart.min.js"></script>
+    <script src="coordinate.js" charset="UTF-8"></script>
+    <script src="dot.js" charset="UTF-8"></script>
+    <script src="sketch.js" charset="UTF-8"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h2><span>S-I-R model Epidemic Simulation</span></h3>
+
+            <div class="headerleft">
+                <div class="left150">
+                    <table>
+                        <tr class="susceptibleText">
+                            <td><b>S</b>usceptible</td>
+                            <td>
+                                <div id="susceptible"></div>
+                            </td>
+                        </tr>
+                        <tr class="infectedText">
+                            <td><b>I</b>nfected</td>
+                            <td>
+                                <div id="infected"></div>
+                            </td>
+                        </tr>
+                        <tr class="recoveredText">
+                            <td><b>R</b>ecovered</td>
+                            <td>
+                                <div id="recovered"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Population
+                            </td>
+                            <td>
+                                <div id="population"></div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="left150">
+                    &nbsp;<span style="font-size: xx-large;" class="time" id="timer"></span>
+                </div>
+                <div class="left150">
+                    <input id="reset" type="button" value="Reset" class="button button3">
+                </div>
+            </div>
+            <div class="headercontent"  style="height: 150px;">
+                Parameter
+                <div>
+                    <div class="widget-container">
+                        <p>Dot size (social distancing): <span id="dotSize">16</span></p>
+                        1 <input id="dotsizeslider" type="range" min="1" max="30" value="16"> 30
+                    </div>
+                    <div class="widget-container">
+                        <p>Remain infectious for day(s) : <span id="timeToRecover">3</span></p>
+                        1 <input id="infectiondurationslider" type="range" min="1" max="10" value="3"> 10
+                    </div>
+                    <div class="widget-container">
+                        <p>Population Size : <span id="populationSize">100</span></p>
+                        10 <input id="populationsizeslider" type="range" min="10" max="1000" value="100"> 1000
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="left-sidebar">
+            <div>
+                <div class="chart-container">
+                    <canvas id="stackedChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="rawChart"></canvas>
+                </div>
+            </div>
+
+        </div>
+        <div id="content">
+            <div id="inner-content">
+                <div id="sketch-holder">
+                    <!-- sketch will go here! -->
+                </div>
+
+            </div>
+        </div>
+        <div id="footer"><p><a href="http://douglaswzs.github.io">&copy; 2020 Douglas Wong  </a></p></div>
+    </div>
+    <!-- graph script need to be loaded last -->
+    <script src="graphscript.js" charset="UTF-8"></script>
+</body>
+
+</html>
