@@ -3,6 +3,9 @@ A simulation of S-I-R model. Made with P5.JS and Graph.JS
 
 The outbreak of the novel coronavirus disease (Covid-19) brought considerable turmoil all around the world. This simulation highlight the important of social distancing and simulate the level of the infection is needed to achieve herd immunity. The simulation does not take into account of death rate and vaccination.
 
+
+[douglaswzs.github.io/SIR-model-simulation/](https://douglaswzs.github.io/SIR-model-simulation/)
+
 ## Demo of this project
 
 <img src="/SIRsimulation.gif"/>
