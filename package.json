@@ -4,7 +4,7 @@
     "description": "S-I-R Model Simulation",
     "private": true,
     "dependencies": {
-        "chart.js": "2.9.3",
+        "chart.js": "2.9.4",
         "p5": "1.0.0"
     }
 }
